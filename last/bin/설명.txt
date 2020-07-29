@@ -1,0 +1,34 @@
+☆ 실행 순서
+1. GameServer실행 - 시작하기 버튼
+2. MainClass 실행하여 클라이언트 접속
+(클라이언트 쪽은 Client,GameServer 파일이 없어도 됨)
+3. 배팅을 하면 준비 버튼이 활성화 됨
+4. 준비 버튼을 누르면 대기 상태가 되고 준비 버튼이 비활성화됨.
+  모든 클라이언트가 대기 상태가 되면 게임이 시작됨. 
+5. 게임을 하다 돈이 1000원 이하로 떨어지면 자동으로 겜이 끝나고 나머지 인원들로 진행이 됨
+
+※ 메인 클래스 에러뜨면 import sun.nio.ch.ThreadPool; 지우면 됨
+※ img 폴더는 패키지 폴더에서 상위 상위 폴더에 넣음
+
+☆ horseracing 패키지 내용
+
+------------서버--------------
+  GameServer.java
+-> 서버를 열고 닫음
+ Client.java
+-> 서버와 클라이언트간의 통신을 조율함
+ 
+
+------------클라이언트-------------
+ bettingController.java
+-> betting.fxml을 조율함
+ Controller.java
+-> 메인 게임화면 horse.fxml을 조율함
+ horse.java
+-> 말을 정의한 클래스
+ MainClass.java
+-> 서버로 접속하는 접속하고 게임을 시작해주는 접속기
+ player.java
+-> 플레이어를 정의한 클래스
+
+자세한 건 주석에
